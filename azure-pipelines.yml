@@ -28,6 +28,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 - task: DotNetCoreCLI@2
+  displayName: 'Publishartifacts'
   inputs:
     command: 'publish'
     publishWebProjects: true
